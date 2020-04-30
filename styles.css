@@ -4,4 +4,12 @@ body {
 
 h1 {
     color: palevioletred;
+    animation: blinker .5s infinite;
+}
+
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
 }
