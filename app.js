@@ -80,7 +80,7 @@ function activateCheats() {
   // document.body.style.backgroundImage = "url('images/cheatBackground.png')";
   document.getElementById("cat-pic").src = "./images/coolcat.png"
 
-  var audio = new Audio('audio/pling.mp3');
+  var audio = new Audio('./audio/catindiana.mp3');
   audio.play();
 
   alert("cheats activated");
