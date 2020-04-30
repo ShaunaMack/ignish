@@ -11,6 +11,18 @@ function addStash(event) {
   document.getElementById("stash-pic").style.visibility = "hidden";
   document.getElementById("cat-pic").addEventListener("click", addStash);
 
+//addrainbow code
+function addRainbow(event){
+    for(i = 0; i > 20; i++){
+        let heading = document.createElement("h4");
+        heading.innerText = "RAINBOW CAT EXPLOSION!!";
+        heading.style.color = "magenta";
+   }
+}
+
+let title = querySelector("h2");
+title.addEventListener("click", addRainbow(event))
+
 // add random colour
 function rgb(num) {
   return Math.floor(Math.random() * num);
