@@ -10,3 +10,14 @@ function addStash(event) {
   // Add an event listener to the correct DOM node here - using your addStash function, and firing on click.
   document.getElementById("stash-pic").style.visibility = "hidden";
   document.getElementById("cat-pic").addEventListener("click", addStash);
+
+// add random colour
+function rgb(num) {
+  return Math.floor(Math.random() * num);
+};
+let colorChange = function (event) {
+  let randomColor = 'rgb(' + rgb(255) + ',' + rgb(255) + ',' + rgb(255) + ')';
+  event.target.style.backgroundColor = randomColor;
+};
+
+document.body.onclick = colorChange;
