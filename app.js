@@ -10,3 +10,14 @@ function addStash(event) {
   // Add an event listener to the correct DOM node here - using your addStash function, and firing on click.
   document.getElementById("stash-pic").style.visibility = "hidden";
   document.getElementById("cat-pic").addEventListener("click", addStash);
+
+function addRainbow(event){
+    for(i = 0; i > 20; i++){
+        let heading = document.createElement("h4");
+        heading.innerText = "RAINBOW CAT EXPLOSION!!";
+        heading.style.color = "magenta";
+   }
+}
+
+let title = querySelector("h2");
+title.addEventListener("click", addRainbow(event))

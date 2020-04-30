@@ -8,16 +8,31 @@
         #stash-pic {
           position: absolute;
         }
-      </style>
+
+		#page {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		#matches {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
+	</style>
 </head>
 <body>
-    <h2>What's the weather like?...</h2>
-    <h1>WET</h1>
-
-    <img id="stash-pic" src="./img/stash.png">
-    
-    <img id="cat-pic" src="./images/04.jpg" alt="sad bath cat">
-
+    <div id="page">
+        <h2>What's the weather like?...</h2>
+        <h1>WET</h1>
+        <div id="matches">
+            <img id="stash-pic" src="./img/stash.png">
+            
+            <img id="cat-pic" src="./images/04.jpg" alt="sad bath cat">
+        </div>
+    </div>
 <script src="app.js"></script>
 </body>
 </html>
