@@ -12,17 +12,16 @@ function addStash(event) {
   document.getElementById("cat-pic").addEventListener("click", addStash);
 
 //addrainbow code
-// function addRainbow(event){
-//     for(i = 0; i > 20; i++){
-//         let heading = document.createElement("h4");
-//         heading.innerText = "RAINBOW CAT EXPLOSION!!";
-//         heading.style.color = "magenta";
-//         body.appendChild(heading);
-//    }
-// }
 
-// let title = querySelector("h2");
-// title.addEventListener("click", addRainbow(event))
+function addRainbow(event){
+    let title = document.getElementById("wet-heading");
+    for(i = 0; i < 20; i++){
+        let randomColor = 'rgb(' + rgb(255) + ',' + rgb(255) + ',' + rgb(255) + ')';
+        title.style.textDecorationColor = randomColor;
+   }
+}
+let title = document.getElementById("wet-heading");
+title.addEventListener("click", addRainbow(event))
 
 // add random colour
 function rgb(num) {
