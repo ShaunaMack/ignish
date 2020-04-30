@@ -12,6 +12,7 @@ function addStash(event) {
   document.getElementById("cat-pic").addEventListener("click", addStash);
 
 //addrainbow code
+
 function addRainbow(event){
     let title = document.getElementById("wet-heading");
     for(i = 0; i < 20; i++){
